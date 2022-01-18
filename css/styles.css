@@ -54,7 +54,7 @@ h2 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .list {
   padding: 0;
@@ -258,6 +258,16 @@ h2 {
   background-color: var(--btn-hover-color);
 }
 /* Our advantages */
+.advantage-list {
+  display: flex;
+  justify-content: center;
+}
+.advantage-list .item {
+  width: 270px;
+}
+.advantage-list .item + .item {
+  margin-left: 30px;
+}
 .title.advantage {
   margin-bottom: 10px;
 
@@ -266,20 +276,47 @@ h2 {
   line-height: 1.14;
   text-transform: uppercase;
 }
+/* Features */
+.feature {
+  display: flex;
+  justify-content: center;
+}
+.feature .item + .item {
+  margin-left: 30px;
+}
 /* Our team */
 .section.dimm {
   background-color: var(--dimm-bg-color);
+}
+.team-list .image {
+  margin-bottom: 30px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-list .item {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+}
+.team-list .item + .item {
+  margin-left: 30px;
 }
 .title.team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 .position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* <<<<< Page Portfolio >>>>> */
 
