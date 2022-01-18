@@ -113,6 +113,7 @@ h2 {
 /* Site nav */
 .nav-group {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -122,6 +123,7 @@ h2 {
   margin-left: 50px;
 }
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -138,11 +140,13 @@ h2 {
 /* Contact */
 .contact {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .contact .item + .item {
   margin-left: 50px;
 }
+
 .contact .mail,
 .contact .tel {
   color: var(--primary-text-color);
@@ -203,10 +207,6 @@ h2 {
   margin-bottom: 9px;
 
   color: var(--primary-white-color);
-}
-.mail {
-  margin-top: 0;
-  margin-bottom: 9px;
 }
 
 /* <<<<< Page Main >>>>> */
