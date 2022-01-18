@@ -143,6 +143,9 @@ h2 {
   align-items: center;
   margin-left: auto;
 }
+.contact .link {
+  display: block;
+}
 .contact .item + .item {
   margin-left: 50px;
 }
