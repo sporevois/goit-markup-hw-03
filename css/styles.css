@@ -54,7 +54,7 @@ h2 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 .list {
   padding: 0;
@@ -321,6 +321,14 @@ h2 {
 /* <<<<< Page Portfolio >>>>> */
 
 /* Filter buttons */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-list .item + .item {
+  margin-left: 8px;
+}
 .filt-btn {
   display: inline-block;
   padding: 6px 22px;
@@ -344,9 +352,22 @@ h2 {
   background-color: var(--current-item-color);
 }
 /* Portfolio list */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio .item + .item {
+  margin-left: 30px;
+}
 .image {
   display: block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+.item-text {
+  padding: 20px 24px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color);
 }
 .title.description,
 .filter {
@@ -362,8 +383,6 @@ h2 {
   letter-spacing: 0.06em;
 }
 .filter {
-  margin-bottom: 20px;
-
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
