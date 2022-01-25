@@ -28,8 +28,6 @@
 /*::::::::::::::Body Styles:::::::::::::::::::::::*/
 
 body {
-  margin: 0;
-
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
@@ -122,6 +120,7 @@ h2 {
 }
 .site-nav .link {
   display: block;
+  padding: 32px 0;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -223,7 +222,7 @@ h2 {
 }
 .hero-title {
   display: inline-block;
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 30px;
@@ -260,7 +259,6 @@ h2 {
 .advantage-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 .advantage-list .item {
   width: 270px;
@@ -277,6 +275,9 @@ h2 {
   text-transform: uppercase;
 }
 /* Features */
+.features {
+  padding-top: 0;
+}
 .feature {
   display: flex;
   justify-content: center;
@@ -289,7 +290,10 @@ h2 {
   background-color: var(--dimm-bg-color);
 }
 .team-list .image {
-  margin-bottom: 30px;
+  display: block;
+}
+.team-text {
+  padding: 30px 0;
 }
 .team-list {
   display: flex;
@@ -316,7 +320,6 @@ h2 {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 30px;
 }
 /* <<<<< Page Portfolio >>>>> */
 
@@ -374,7 +377,7 @@ h2 {
   display: block;
 }
 .item-text {
-  padding: 19px 23px;
+  padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
 }
